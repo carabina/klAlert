@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "klAlert"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "Simple one call alerts with completions in Swift."
   s.description  = <<-DESC
 	UIAlertController is pretty cool, but it means having to write a few lines of code where before one call was often all you'd need. klAlert is a series of static functions that let you create and handle the results of a modern alert in just one call.

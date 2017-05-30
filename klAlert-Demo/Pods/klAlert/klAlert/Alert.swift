@@ -9,7 +9,7 @@ import UIKit
 
 let Device = UIDevice.current.userInterfaceIdiom
 
-public class Alert {
+class Alert {
 	
 	/**
 	Shows an alert with one button. There is no completion hander. It simply vanishes when the user taps the button.
