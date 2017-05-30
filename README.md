@@ -6,11 +6,11 @@ Alert.withTwoButtonsAndCompletion(title: "Checking",
 		                            msg: "Shall we go on or cancel?",
 		                         cancel: "Cancel",
 		                             go: "Go On") { (go) in
-											if go {
-												//We proceed
-											} else {
-												//We cancel
-											}
+							if go {
+								//We proceed
+							} else {
+								//We cancel
+							}
 		}
 ```
 ## Current Version: 1.0.0
