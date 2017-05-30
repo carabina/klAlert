@@ -18,7 +18,7 @@ public class Alert {
 	- Parameter msg: Explanatory alert text
 	- Parameter btn: Text for the button
 	*/
-	static func withOneButton(title: String, msg: String, btn: String) {
+	public static func withOneButton(title: String, msg: String, btn: String) {
 		let theAlert = UIAlertController(title: title, message: msg, preferredStyle: .alert)
 		let defaultAction = UIAlertAction(title: btn, style: .default, handler: nil)
 		theAlert.addAction(defaultAction)
@@ -36,7 +36,7 @@ public class Alert {
 	- Parameter btn: Text for the button
 	- Parameter handler: closure that will run when the button is tapped
 	*/
-	static func withOneButtonAndCompletion(title: String, msg: String, btn: String, handler: @escaping () -> ()) {
+	public static func withOneButtonAndCompletion(title: String, msg: String, btn: String, handler: @escaping () -> ()) {
 		let theAlert = UIAlertController(title: title, message: msg, preferredStyle: .alert)
 		let defaultAction = UIAlertAction(title: btn, style: .default) { (action) -> Void in
 			handler()
@@ -57,7 +57,7 @@ public class Alert {
 	- Parameter go: Text for "OK" or "Proceed" button
 	- Parameter handler: closure with a Bool indicating which button was tapped (go == true)
 	*/
-	static func withTwoButtonsAndCompletion(title: String, msg: String, cancel: String, go: String, handler: @escaping (_ result: Bool) -> ()) {
+	public static func withTwoButtonsAndCompletion(title: String, msg: String, cancel: String, go: String, handler: @escaping (_ result: Bool) -> ()) {
 		let theAlert = UIAlertController(title: title, message: msg, preferredStyle: .alert)
 		let cancelAction = UIAlertAction(title: cancel, style: .cancel) { (action) -> Void in
 			handler(false)
@@ -83,7 +83,7 @@ public class Alert {
 	- Parameter buttons: Array of Strings with button titles
 	- Parameter handler: closure with an Int indicating which button was tapped (cancel = 0)
 	*/
-	static func asAPopupWithCompletion(source: UIView, title: String?, msg: String?, cancel: String, buttons: [String], handler: @escaping (_ result: Int) -> ()) {
+	public static func asAPopupWithCompletion(source: UIView, title: String?, msg: String?, cancel: String, buttons: [String], handler: @escaping (_ result: Int) -> ()) {
 		let theAlert = UIAlertController(title: title, message: msg, preferredStyle: .actionSheet)
 		if Device == .pad {
 			theAlert.modalPresentationStyle = .popover

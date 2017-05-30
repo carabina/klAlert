@@ -13,8 +13,8 @@ Alert.withTwoButtonsAndCompletion(title: "Checking",
 							}
 		}
 ```
-## Current Version: 1.0.1
-And here we are.
+## Current Version: 1.0.2
+It, um, helps to make the class public...
 
 ## Installation
 ### [CocoaPods](http://cocoapods.org/)

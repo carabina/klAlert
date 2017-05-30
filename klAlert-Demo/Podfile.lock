@@ -1,11 +1,11 @@
 PODS:
-  - klAlert (1.0.1)
+  - klAlert (1.0.2)
 
 DEPENDENCIES:
   - klAlert
 
 SPEC CHECKSUMS:
-  klAlert: 666278522438a81cc3d3ad6fa2ff07871123116f
+  klAlert: be774a9e158cd099212a39d30a36f4956f5727bf
 
 PODFILE CHECKSUM: 286d4b52d2e0e9bbb80fcdfa04b6066787195282
 
