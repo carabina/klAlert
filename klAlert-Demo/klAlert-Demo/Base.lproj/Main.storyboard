@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="klAlert_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2mr-8J-4ON">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="skI-4Y-ERj">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
+                                        <state key="normal" title="One Button, No Completion"/>
+                                        <connections>
+                                            <action selector="oneBtnNoComp" destination="BYZ-38-t0r" eventType="touchUpInside" id="eq8-hN-gyr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQa-MN-ZKv">
+                                        <rect key="frame" x="0.0" y="162" width="375" height="161.5"/>
+                                        <state key="normal" title="One Button, with Completion"/>
+                                        <connections>
+                                            <action selector="oneBtnWithComp" destination="BYZ-38-t0r" eventType="touchUpInside" id="g0d-DC-0gx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6L-a3-yln">
+                                        <rect key="frame" x="0.0" y="323.5" width="375" height="162"/>
+                                        <state key="normal" title="Two Buttons, with Completion"/>
+                                        <connections>
+                                            <action selector="twoBtnsWithComp" destination="BYZ-38-t0r" eventType="touchUpInside" id="drh-hl-iwj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vi9-kv-meA">
+                                        <rect key="frame" x="0.0" y="485.5" width="375" height="161.5"/>
+                                        <state key="normal" title="Popup, with Completion"/>
+                                        <connections>
+                                            <action selector="popupWithComp" destination="BYZ-38-t0r" eventType="touchUpInside" id="BOw-V2-GeS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2mr-8J-4ON" secondAttribute="trailing" id="PPb-iz-uTG"/>
+                            <constraint firstItem="2mr-8J-4ON" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aLX-jw-n2N"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2mr-8J-4ON" secondAttribute="bottom" id="bc6-TJ-1mG"/>
+                            <constraint firstItem="2mr-8J-4ON" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="rdH-Zd-5dW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="oneBtnComp" destination="xQa-MN-ZKv" id="FD5-bg-wU9"/>
+                        <outlet property="popupComp" destination="vi9-kv-meA" id="6zU-TQ-Muh"/>
+                        <outlet property="twoBtnsComp" destination="p6L-a3-yln" id="tXv-WW-1An"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="618" y="159"/>
+        </scene>
+    </scenes>
+</document>
